@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+/*
+#4e4350
+#ededed;
+#ddd
+#ccc
+#bbb
+#aaa
+*/
+
+
+*{
+  font-family: "Arimo", sans-serif;
+}
+body{
+  background-color: #ededed;
+}
