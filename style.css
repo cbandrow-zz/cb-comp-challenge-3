@@ -66,7 +66,7 @@ button{
   border-style: solid;
   border-width: 1px;
   border-color: #aaa;
-  border-radius: 12px;
+  border-radius: 20px;
   font-size: 10px;
 
 }
@@ -112,7 +112,7 @@ button{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 
 /*-----*** Header/Tile Styling ***------*/
@@ -121,22 +121,53 @@ button{
   width: 100%;
   border: 1px solid #ff88cc;
 }
+.position h1, p{
+  margin-left: 15px;
+}
+
+.position h1{
+  margin-bottom: 4px;
+}
+
+.position p{
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.position a{
+  font-size: 10px;
+  display: inline;
+}
 
 .buttons-box{
   text-align: center;
   width: 70%;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-between;
 }
+
 .btn-icons{
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   padding: 0px;
   text-align: center;
 }
 .btn-icons img{
+  width: 20px;
+}
+
+#open{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  font-size: 12px;
+}
+
+#location{
   width: 15px;
+  /*vertical-align: baseline;*/
 }
 
 #current{
@@ -203,25 +234,24 @@ button{
 }
 
 .inner{
+  position: relative;
   transform: rotate(45deg);
-  margin-left: auto;
-  margin-right: auto;
+  top: 3%;
+  left: 3%;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 .inner h2{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*margin-bottom: 2px;*/
+  margin-bottom: 2px;
   font-size: 30px;
   font-weight: 300;
 }
 
 .inner p{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*margin-top: 2px;*/
+  margin-top: 2px;
 }
 
 #one {
@@ -246,4 +276,13 @@ button{
   border-bottom-color: #bbb;
   border-top-color: #bbb;
   transform: rotate(-45deg);
+}
+
+.bar-graph{
+  display: inline-block;
+  width: 90%;
+}
+
+.bar-graph img{
+  width 100%;
 }
