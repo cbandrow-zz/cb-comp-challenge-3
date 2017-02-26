@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+/*-----Global Styling -----*/
 
 /*
+#D64C02;
 #4e4350
 #ededed;
 #ddd
@@ -9,10 +10,240 @@
 #aaa
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-*{
-  font-family: "Arimo", sans-serif;
+html {
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: "Lato", sans-serif;
+}
+
+/*----General Structure Styling -----*/
 body{
   background-color: #ededed;
+  color: #4e4350;
+  width: 100%;
+}
+
+/*----General Text/Interaction Styling -------*/
+
+h1{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p{
+  font-size: 12px;
+}
+
+a{
+  color: #D64C02;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a:hover{
+  color: #D64C02;
+  text-decoration: underline;
+}
+
+
+input{
+  background-color: #ededed;
+  font-size: .6em;
+  width: 80%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-style: none;
+}
+
+button{
+  background-color: #ededed;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  border-radius: 12px;
+  font-size: 10px;
+
+}
+/*-----***Top Nav***------*/
+
+.left{
+  display: none;
+}
+
+.top{
+  height: 45px;
+  display: flex;
+  width: 100%;
+  border: 2px solid #444444;
+}
+.square{
+  flex: 1;
+  border: 1px dashed #999;
+}
+
+.search{
+  border: 1px dashed #999;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex: 4;
+}
+.square:hover{
+  fill: #ededed;
+  background-color: #D64C02;
+}
+
+.square img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square img path:hover{
+  fill: #ededed;
+}
+
+.top-icons {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*-----*** Header/Tile Styling ***------*/
+
+.position{
+  width: 100%;
+  border: 1px solid #ff88cc;
+}
+
+.buttons-box{
+  text-align: center;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-icons{
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+  text-align: center;
+}
+.btn-icons img{
+  width: 15px;
+}
+
+#current{
+  color: #aaa;
+  padding-bottom: 8px;
+  font-size: 16px;
+  text-decoration:none;
+}
+#current:hover{
+  color: #4e4350;
+  text-decoration:none;
+  border-bottom: 2px solid #D64C02;
+}
+
+#current:focus{
+
+}
+
+#left-arrow{
+
+}
+
+#right-arrow{
+
+}
+
+.tab-nav{
+  display: none;
+}
+
+.scroll-nav{
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  height: 30px;
+}
+
+/*-------***Main Body/ Graphs section***--------*/
+
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border: 1px dotted #466466;
+  text-align: center;
+}
+
+.graphs{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+	width: 130px;
+	height: 130px;
+	background: #ddd;
+	border-radius: 90px;
+  border-width: 8px;
+  border-style: solid;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.inner{
+  transform: rotate(45deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner h2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-bottom: 2px;*/
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.inner p{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: 2px;*/
+}
+
+#one {
+  border-left-color: #a3021a;
+  border-right-color: #a3021a;
+  border-bottom-color: #bbb;
+  border-top-color: #a3021a;
+  transform: rotate(-45deg);
+}
+
+#two {
+  border-left-color: #026ba3;
+  border-right-color: #bbb;
+  border-bottom-color: #bbb;
+  border-top-color: #026ba3;
+  transform: rotate(-45deg);
+}
+
+#three {
+  border-left-color: #6ba302;
+  border-right-color: #bbb;
+  border-bottom-color: #bbb;
+  border-top-color: #bbb;
+  transform: rotate(-45deg);
 }

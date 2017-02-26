@@ -5,21 +5,81 @@
     <title>CB-Static-Comp-3</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav class="left">
         <!--Insert search/navigation here-->
     </nav>
     <nav class="top">
+      <div class ="square">
+        <img src="images/hamburger.svg" class="top-icons">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search for a job, task, or resume">
+      </div>
+      <div class ="square">
+        <img src="images/user-plus.svg" class="top-icons">
+      </div>
+      <div class ="square">
+        <img src="images/calendar-plus.svg" class="top-icons">
+      </div>
+      <div class ="square">
+        <img src="images/grid.svg" class="top-icons">
+      </div>
       <!--Insert search/navigation here-->
     </nav>
     <header class="position">
-      <!--Insert Header, title of position and other  here-->
+      <h1>Customer Service Representative</h1>
+      <p>Location</p>
+      <a href="#">Preview More Details</a>
+      <div class="buttons-box">
+        <button> Open</button>
+        <button class= "btn-icons"><img src="images/bookmark.svg"</button>
+        <button class= "btn-icons">edit</buttonclass>
+        <button class= "btn-icons">trash</button>
+      </div>
+      <div class ="scroll-nav">
+        <button id="left-arrow">arrow left</button>
+        <a href="#" id="current">Summary</a>
+        <button id="right-arrow">arrow right</button>
+      </div>
+      <div class ="tab-nav">
+        <ul>
+          <li class="active">Summary</li>
+          <li>Applicants</li>
+          <li>Job Boards</li>
+          <li>Interviews</li>
+          <li>Activity</li>
+          <li>Broadcast</li>
+          <li>Notifications</li>
+        </ul>
+      </div>
     </header>
     <main class="container">
       <!--wrap main body content within-->
       <section class="data">
-        <!-- charts! graphs! -->
+        <div class="graphs" id="one">
+          <div class="inner">
+            <h2>3,154</h2>
+            <p>APPLICANTS</p>
+          </div>
+        </div>
+        <div class="graphs" id="two">
+          <div class="inner">
+            <h2>1,454</h2>
+            <p>INTERVIEWS</p>
+          </div>
+        </div>
+        <div class="graphs" id="three">
+          <div class="inner">
+            <h2>928</h2>
+            <p>FORWARDS</p>
+          </div>
+        </div>
+      </section>
+      <section class="job">
+
       </section>
       <aside>
         <!-- footer/sidebar info/non-relevants. -->
