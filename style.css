@@ -21,6 +21,10 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+*:focus{
+  outline:none;
+}
+
 /*----General Structure Styling -----*/
 body{
   background-color: #ededed;
@@ -68,6 +72,7 @@ button{
   border-color: #aaa;
   border-radius: 20px;
   font-size: 10px;
+  vertical-align: center;
 
 }
 /*-----***Top Nav***------*/
@@ -77,12 +82,16 @@ button{
 }
 
 .top{
-  height: 45px;
+  height: 50px;
   display: flex;
   width: 100%;
   border: 2px solid #444444;
 }
 .square{
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  vertical-align: center;
   flex: 1;
   border: 1px dashed #999;
 }
@@ -93,6 +102,7 @@ button{
   align-content: center;
   justify-content: center;
   flex: 4;
+  vertical-align: bottom;
 }
 .square:hover{
   fill: #ededed;
@@ -100,6 +110,7 @@ button{
 }
 
 .square img{
+  vertical-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -108,11 +119,42 @@ button{
   fill: #ededed;
 }
 
+.top-icons{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  border-style: none;
+  padding: 0;
+}
+.top-icons:focus{
+  outline: none;
+}
+
+#hamburger{
+  background-image: url("images/hamburger.svg");
+}
+
+#hamburger:hover{
+  background-color: #D64C02;
+  background-image: url("images/hamburger-hover.svg");
+}
+
 .top-icons {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+}
+
+.expand{
+  display: none;
+  flex: 1;
+  border: 1px dashed #999;
 }
 
 /*-----*** Header/Tile Styling ***------*/
@@ -154,18 +196,15 @@ button{
 }
 
 .btn-icons{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 0px;
   text-align: center;
   vertical-align: bottom;
 }
-.btn-icons img{
-  width: 20px;
-}
 
 #edit, #bookmark, #trash{
-  background-size: 20px;
+  background-size: 18px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -200,7 +239,7 @@ button{
 #open{
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
+  height: 30px;
   font-size: 12px;
 }
 
@@ -263,16 +302,14 @@ button{
   display: none;
 }
 
-
-
 span{
   font-size: 15px;
   margin-right: 5px;
   color: #6ba302;
-  vertical-align:baseline;
+  vertical-align: baseline;
 }
 
-/*-------***Main Body/ Graphs section***--------*/
+/*-------***Graphs section***--------*/
 
 .container{
   width: 100%;
@@ -321,12 +358,15 @@ span{
   margin-top: 2px;
 }
 
+#one, #two, #three{
+  transform: rotate(-45deg);
+}
+
 #one {
   border-left-color: #a3021a;
   border-right-color: #a3021a;
   border-bottom-color: #bbb;
   border-top-color: #a3021a;
-  transform: rotate(-45deg);
 }
 
 #two {
@@ -334,7 +374,6 @@ span{
   border-right-color: #bbb;
   border-bottom-color: #bbb;
   border-top-color: #026ba3;
-  transform: rotate(-45deg);
 }
 
 #three {
@@ -342,20 +381,20 @@ span{
   border-right-color: #bbb;
   border-bottom-color: #bbb;
   border-top-color: #bbb;
-  transform: rotate(-45deg);
 }
 
-#totals{
-  margin-top: 10px;
+#totals, #applicants{
+  margin-top: 2px;
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
+  height: 35px;
+  vertical-align: center; 
   font-size: 11px;
 }
 
 .bar-graph{
-  display: inline-block;
+  display : inline-block;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -364,11 +403,61 @@ span{
   width: 90%;
 }
 
-#applicants{
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 35px;
-  font-size: 11px;
+.collapse{
+  width: 25px;
+  height: 25px;
+  background-image: url("images/up-arrow.svg");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.collapse:hover{
+  background-color: #D64C02;
+  background-image: url("images/up-arrow-hover.svg");
+}
+
+hr{
+  color: #bbb;
+  border-style: solid;
+  display: inline-block;
+  width: 40%;
+}
+
+/*-------***Job Section***--------*/
+.job{
+  width: 90%;
+  background-color: #ededed;
+  border: 1px dotted #774477;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading{
+  text-align: left;
+  color: #ededed;
+  background-color: #4e4350;
+}
+.heading h3{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.heading button{
+  display: inline-block;
+  color: #ededed;
+  background-color: #5f5450;
+  border-radius: 0px;
+  font-size: 14px;
+  border-style: none;
+  margin-left: 20px;
+}
+.heading button img{
+  width: 15px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+.content{
+  background-color: #ededed;
 }

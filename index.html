@@ -13,19 +13,19 @@
     </nav>
     <nav class="top">
       <div class ="square">
-        <img src="images/hamburger.svg" class="top-icons">
+        <button class="top-icons" id="hamburger"></button>
       </div>
       <div class="search">
-        <!-- <img src="images/search.svg" class="top-icons"> -->
+        <img src="images/search.svg" width = 20px>
         <input type="text" placeholder="Search for a job, task, or resume">
       </div>
-      <div class ="square">
+      <div class ="expand">
         <img src="images/user-plus.svg" class="top-icons">
       </div>
-      <div class ="square">
+      <div class ="expand">
         <img src="images/calendar-plus.svg" class="top-icons">
       </div>
-      <div class ="square">
+      <div class ="expand">
         <img src="images/grid.svg" class="top-icons">
       </div>
       <!--Insert search/navigation here-->
@@ -59,7 +59,6 @@
       </div>
     </header>
     <main class="container">
-      <!--wrap main body content within-->
       <section class="data">
         <div class="graphs" id="one">
           <div class="inner">
@@ -83,10 +82,19 @@
         <div class ="bar-graph">
           <img src ="images/graph.svg">
         </div>
-        <button id="applicants"> APPLICANTS/DAY</button>
+        <button id="applicants">APPLICANTS/DAY</button>
       </section>
+      <hr>
+      <button class="collapse"></button>
+      <hr>
       <section class="job">
+        <div class="heading">
+          <h3>JOB DESCRIPTION</h3>
+          <button><img src="images/edit.svg">EDIT</button>
+        </div>
+        <div class="content">
 
+        </div>
       </section>
       <aside>
         <!-- footer/sidebar info/non-relevants. -->
