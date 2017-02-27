@@ -31,18 +31,20 @@
       <!--Insert search/navigation here-->
     </nav>
     <header class="position">
-      <h1>Customer Service Representative</h1>
-      <p><img src="images/locations.svg" id="location">San Fancisco, CA - <a href="#">Preview this post</a></p>
+      <div class="details">
+        <h1>Customer Service Representative</h1>
+        <p><img src="images/locations-main.svg" id="location">San Fancisco, CA - <a href="#">Preview this post</a></p>
+      </div>
       <div class="buttons-box">
-        <button id="open"> OPEN</button>
-        <button class= "btn-icons"><img src="images/bookmark.svg"</button>
-        <button class= "btn-icons"><img src="images/edit.svg"></buttonclass>
-        <button class= "btn-icons"><img src="images/trash.svg"></button>
+        <button id="open"> <span>•</span>OPEN</button>
+        <button class= "btn-icons" id="bookmark"></button>
+        <button class= "btn-icons" id="edit"></buttonclass>
+        <button class= "btn-icons" id="trash"></button>
       </div>
       <div class ="scroll-nav">
-        <button id="left-arrow">arrow left</button>
+        <button id="left-arrow"></button>
         <a href="#" id="current">Summary</a>
-        <button id="right-arrow">arrow right</button>
+        <button id="right-arrow"></button>
       </div>
       <div class ="tab-nav">
         <ul>
@@ -77,9 +79,11 @@
             <p>FORWARDS</p>
           </div>
         </div>
+        <button id="totals">TOTALS - Out of 5,123 views</button>
         <div class ="bar-graph">
           <img src ="images/graph.svg">
         </div>
+        <button id="applicants"> APPLICANTS/DAY</button>
       </section>
       <section class="job">
 
