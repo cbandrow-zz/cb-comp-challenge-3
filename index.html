@@ -20,13 +20,13 @@
         <input type="text" placeholder="Search for a job, task, or resume">
       </div>
       <div class ="expand">
-        <img src="images/user-plus.svg" class="top-icons">
+        <button class="top-icons" id="users"></button>
       </div>
       <div class ="expand">
-        <img src="images/calendar-plus.svg" class="top-icons">
+        <button class="top-icons" id="calendar"></button>
       </div>
       <div class ="expand">
-        <img src="images/grid.svg" class="top-icons">
+        <button class="top-icons" id="grid"></button>
       </div>
       <!--Insert search/navigation here-->
     </nav>
@@ -93,11 +93,75 @@
           <button><img src="images/edit.svg">EDIT</button>
         </div>
         <div class="content">
-
+          <div class="table">
+          <table>
+            <tr>
+              <td class="left-data">POSITION TITLE</td>
+              <td class="right-data">Customer Service Rep</td>
+            </tr>
+            <tr>
+              <td class="left-data">LOCATION</td>
+              <td class="right-data">San Francisco, CA</td>
+            </tr>
+            <tr>
+              <td class="left-data">EMPLOYMENT TYPE</td>
+              <td class="right-data">Full-time</td>
+            </tr>
+            <tr>
+              <td class="left-data">EXPERIENCE</td>
+              <td class="right-data">Mid-level</td>
+            </tr>
+            <tr>
+              <td class="left-data">STATUS</td>
+              <td class="right-data">Open</td>
+            </tr>
+            <tr>
+              <td class="left-data">DESCRIPTION</td>
+              <td class="right-data">Work with us! We provide great lunches, sometimes breakfast, a couple of paid holidays a year, and a lifetime filled with sadness! Apply today.</td>
+            </tr>
+            <tr>
+              <td class="left-data">HIRING LEAD</td>
+              <td class="right-data">The guy from HR. Hank, I think?</td>
+            </tr>
+            <tr>
+              <td class="left-data">APPROVED SALARY</td>
+              <td class="right-data">$6.00 and a sandwich</td>
+            </tr>
+          </table>
+          </div>
         </div>
       </section>
-      <aside>
-        <!-- footer/sidebar info/non-relevants. -->
+      <aside class="footer">
+        <hr>
+        <div>
+          <button class="socialmedia" id="facebook"><img src="images/facebook.svg"><span class="hide">Post to Facebook</span></button>
+          <button class="socialmedia" id="twitter"><img src="images/twitter.svg"><span class="hide">Post to Facebook</span></button>
+          <button class="socialmedia" id="linkedin"><img src="images/linkedin.svg"><span class="hide">Post to Facebook</span></button>
+        </div>
+        <hr>
+        <div class="links">
+          <h3><img src="images/globe-link.svg">Link to this Job</h3>
+          <p>Copy the link to this job and share it with someone via email, social media, text message, carrier pidgeon, smoke signals, pony express</p>
+          <div class="inputs">
+            <input class="footer-input" type="text" placeholder="http://www.google.com"><button class="footer-submit">Copy</button>
+          </div>
+        </div>
+        <hr>
+        <div class="links">
+          <h3><img src="images/widgets.svg">Use the Button Widget</h3>
+          <p>Use the magical little buttons on this page for magic! Magic! Like unicorns! Orcs! Elves! Not really, just use the widgets to get the most out of this website</p>
+          <div class="inputs">
+            <input class="footer-input" type="text" placeholder="<link type=text/css>"><button class="footer-submit">Copy</button>
+          </div>
+        </div>
+        <hr>
+        <div class="links">
+          <h3><img src="images/email-send.svg">Upload Resumes by Email</h3>
+          <p>Got a resume or CV you want to upload? Well with the handy-dandy option below, you can do that! Upload that ish! Do the thing!</p>
+          <div class="inputs">
+            <input class="footer-input" type="text" placeholder="someemail@gmail.com"><button class="footer-submit">Upload</button>
+          </div>
+        </div>
       </aside>
     </main>
   </body>
