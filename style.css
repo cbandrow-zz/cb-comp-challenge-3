@@ -870,3 +870,47 @@ tr:last-child {
   width: 20px;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 1150px){
+
+
+/*----Graph/Circles section styling-----*/
+  .circles{
+    width: 60%;
+  }
+
+  .circle-design{
+  	width: 120px;
+  	height: 120px;
+  }
+
+  .inner h2{
+    font-size: 25px;
+  }
+
+  .inner p{
+    font-size: 14px;
+  }
+
+  .bar-graph{
+    width: 30%;
+    margin-right: 15px;
+  }
+  .bar-graph img{
+    width: 95%;
+  }
+
+/*----Lower Button styling-----*/
+.hide{
+  font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 951px){
+  .body-content{
+    width: 100%
+  }
+  .sidenav{
+    display: none;
+  }
+}
