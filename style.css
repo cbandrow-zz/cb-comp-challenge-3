@@ -97,17 +97,89 @@ button{
 
 /*------Left Nav------*/
 .sidenav{
-  display: flex;
+  display: block;
   width: 20%;
   max-width: 250px;
-  height: 100vh;
+  height: auto;
   color: #ddd;
   background-color: #4e4350;
-  border: 1px solid #550055;
 }
 
 
 /*----Left Nav content styling-----*/
+
+.profile{
+  margin-top: 30px;
+  display: block;
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  width: 50%;
+}
+
+.sidenav hr{
+  color: #3d3240;
+  border-style: solid;
+  display: block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav ul{
+  margin-top: 5px;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sidenav li{
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.side-icon{
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+.sidenav h3{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+h4{
+  color: #999;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.box{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+#box1{
+  background-color:#a3021a;
+}
+
+#box2{
+  background-color:#026ba3;
+}
+
+#box3{
+  background-color:#6ba302;
+}
+
+#box4{
+  background-color: #D64C02;
+}
 
 
 /*------Main Wrapper------*/
@@ -443,7 +515,7 @@ button{
 /*-----***-Circles------*/
 .circles{
   display: inline-block;
-  height: 200px;
+  height: auto;
   width: 60%;
   background-color: #ddd;
   margin-left: 40px;
@@ -518,7 +590,7 @@ button{
 .bar-graph{
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: auto;
   width: 35%;
   background-color: #ddd;
 }
@@ -661,7 +733,7 @@ tr:last-child {
 .contact{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 38%;
   height: auto;
   background-color: #ddd;
 }
@@ -673,6 +745,7 @@ tr:last-child {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 .socialmedia{
@@ -680,7 +753,7 @@ tr:last-child {
   border-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
   height: 55px;
 
 }
@@ -726,15 +799,15 @@ tr:last-child {
   display: inline-block;;
   vertical-align: center;
   color: #ededed;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 60px;
+  /*margin-right: 90px;*/
 }
 
 /*-----Methods for Contact -----*/
 
 .forms{
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
 }
 
