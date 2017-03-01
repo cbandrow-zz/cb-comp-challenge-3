@@ -20,10 +20,10 @@ Desktop Site:
 ---
 Tablet Site:
 
-![Tablet Version](https://github.com/cbandrow/cb-comp-challenge-2/blob/master/images/sc3-tablet.png)
+![Tablet Version](https://github.com/cbandrow/cb-comp-challenge-3/blob/master/images/sc3-tablet.png)
 ---
 
 Mobile Site:
 
-![Mobile Version](https://github.com/cbandrow/cb-comp-challenge-2/blob/master/images/sc3-mobile.png)
+![Mobile Version](https://github.com/cbandrow/cb-comp-challenge-3/blob/master/images/sc3-mobile.png)
 ---
