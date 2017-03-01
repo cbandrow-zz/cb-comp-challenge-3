@@ -71,14 +71,15 @@
         <section class="middle-nav">
           <div class ="scroll-nav">
             <button id="left-arrow"></button>
+            <a href="#" class="current" id="current-mobile" >SUMMARY</a>
           <ul>
             <li><a href="#" id="current">SUMMARY</a></li>
-            <li><a href="#" class="inactive">APPLICANTS</a></li>
-            <li><a href="#" class="inactive">JOB BOARD</a></li>
-            <li><a href="#" class="inactive">INTERVIEWS</a></li>
-            <li><a href="#" class="inactive">ACTIVITY</a></li>
-            <li><a href="#" class="inactive">BROADCAST</a></li>
-            <li><a href="#" class="inactive">NOTIFICATION</a></li>
+            <li class="removed"><a href="#" class="inactive">APPLICANTS</a></li>
+            <li class="removed"><a href="#" class="inactive">JOB BOARD</a></li>
+            <li class="removed"><a href="#" class="inactive">INTERVIEWS</a></li>
+            <li class="removed"><a href="#" class="inactive">ACTIVITY</a></li>
+            <li class="removed"><a href="#" class="inactive">BROADCAST</a></li>
+            <li class="removed"><a href="#" class="inactive">NOTIFICATION</a></li>
           </ul>
             <button id="right-arrow"></button>
           </div>
@@ -87,30 +88,38 @@
       <article class="mid-content">
         <section class="graphs">
           <div class="circles">
+            <div class="circle-align">
+            <div class="circle-container">
             <div class="circle-design" id="one">
               <div class="inner">
                 <h2>3,154</h2>
                 <p>APPLICANTS</p>
               </div>
             </div>
+            </div>
+            <div class="circle-container">
             <div class="circle-design" id="two">
               <div class="inner">
                 <h2>1,454</h2>
                 <p>INTERVIEWS</p>
               </div>
             </div>
+          </div>
+            <div class="circle-container">
             <div class="circle-design" id="three">
               <div class="inner">
                 <h2>928</h2>
                 <p>FORWARDS</p>
               </div>
             </div>
+            </div>
+          </div>
             <button id="totals">TOTALS - Out of 5,123 views</button>
           </div>
           <div class="bar-graph">
             <img src ="images/graph.svg">
             <div>
-              <button id="applicants">APPLICANTS/DAY</button>
+              <button id="applicants">APPLICANTS / DAY</button>
             </div>
           </div>
           <div class="separate">
