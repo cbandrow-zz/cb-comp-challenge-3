@@ -1,15 +1,5 @@
 /*-----Global Styling -----*/
 
-/*
-#D64C02;
-#4e4350
-#ededed;
-#ddd
-#ccc
-#bbb
-#aaa
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html {
@@ -27,10 +17,10 @@ html {
 
 /*----General Structure Styling -----*/
 body{
-  display: flex;
-  flex-wrap: wrap;
   background-color: #ededed;
   color: #4e4350;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -47,98 +37,96 @@ p{
 
 a{
   color: #4e4350;
-  text-decoration: none;
   font-size: 12px;
+  text-decoration: none;
 }
 
 a:hover{
-  color: #4e4350;
-  text-decoration:none;
   border-bottom: 2px solid #D64C02;
+  color: #4e4350;
   padding-bottom: 10px;
+  text-decoration:none;
 }
 
 span{
+  color: #6ba302;
   font-size: 15px;
   margin-right: 5px;
-  color: #6ba302;
   vertical-align: baseline;
 }
 
 hr{
-  color: #bbb;
   border-style: solid;
+  color: #bbb;
   display: inline-block;
-  width: 46%;
   margin-left: auto;
   margin-right: auto;
+  width: 46%;
 }
 
 input{
   background-color: #ededed;
-  font-size: .85em;
-  width: 80%;
-  height: 80%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
   border-style: none;
+  font-size: .85em;
+  height: 80%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0px;
+  width: 80%;
+
 }
 
 button{
   background-color: #ededed;
-  border-style: solid;
-  border-width: 1px;
   border-color: #aaa;
   border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
   font-size: 10px;
   vertical-align: center;
 }
 
 /*------Left Nav------*/
 .sidenav{
-  display: block;
-  width: 20%;
-  max-width: 250px;
-  height: auto;
-  color: #ddd;
   background-color: #4e4350;
+  color: #ddd;
+  height: auto;
+  display: block;
+  max-width: 350px;
+  width: 20%;
 }
 
 
 /*----Left Nav content styling-----*/
 
 .profile{
-  margin-top: 30px;
-  display: block;
+  border: none;
   border-radius: 500px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  border: none;
+  margin-top: 30px;
   width: 50%;
 }
 
 .sidenav hr{
-  color: #3d3240;
   border-style: solid;
+  color: #3d3240;
   display: block;
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
+  width: 85%;
 }
 
 .sidenav ul{
-  margin-top: 5px;
   list-style: none;
+  margin-top: 5px;
   padding-left: 0px;
 }
 
 .sidenav li{
   font-size: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 0px;
+  padding: 10px 0px 10px 30px;
 }
 
 .sidenav li:hover{
@@ -146,28 +134,28 @@ button{
 }
 
 .side-icon{
-  width: 20px;
   margin-right: 5px;
+  width: 20px;
   vertical-align: text-bottom;
 }
 
 .sidenav h3{
-  text-align: center;
   font-size: 16px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 h4{
   color: #999;
-  margin-left: 20px;
   margin-bottom: 0px;
+  margin-left: 20px;
 }
 
 .box{
-  width: 12px;
-  height: 12px;
   display: inline-block;
+  height: 12px;
   margin-right: 10px;
+  width: 12px;
   vertical-align: bottom;
 }
 
@@ -190,51 +178,48 @@ h4{
 
 /*------Main Wrapper------*/
 .body-content{
+  background-color: #ededed;
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
   width: 80%;
-  background-color: #ededed;
 }
 
 /*------Top Content------*/
 .top{
+  background-color: #ededed;
   display: flex;
   flex-direction: column;
+  height: auto;
   width: 100%;
-  height: 240px;
-  background-color: #ededed;
-
 }
 
 /*-----**-Top Nav------*/
 /*Structural Styling*/
 .topnav{
-  display: flex;
-  width: 100%;
-  height: 65px;
   background-color: #ededed;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  height: 65px;
+  width: 100%;
+}
+
+.topnav button{
+  border: none;
   border-bottom: 1px solid #ddd;
 }
 
 .square{
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  vertical-align: center;
-  flex: 1;
-  border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  flex: 1;
 }
 
 .search{
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  flex: 6;
-  vertical-align: center;
-  border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  flex: 6;
+  text-align: center;
+  vertical-align: center;
 }
 .search img{
   vertical-align: text-bottom;
@@ -242,33 +227,35 @@ h4{
 }
 
 .top-icons{
+  background-color: #ededed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  border-top: 1px solid #ddd;
   border-radius: 0px;
+  border-right: 1px solid #ddd;
+  height: 100%;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 100%;
-  background-color: #ededed;
-  background-repeat: no-repeat;
-  background-size: 35px;
-  background-position: center;
-  padding: 0;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
 }
 
 #find{
   display: none;
 }
+
 .topinput{
-  display: inline-block;
   background-color: #ededed;
-  font-size: 1em;
-  width: 80%;
-  height: 80%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
   border-style: none;
+  display: inline-block;
+  font-size: 1em;
+  height: 80%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0px;
+  width: 80%;
+
 }
 
 /*Individual Button Styling*/
@@ -311,12 +298,12 @@ h4{
 
 /*-----**-Heading------*/
 .heading{
+  background-color: #ededed;
   display: flex;
   height: auto;
-  width: 100%;
-  background-color: #ededed;
   justify-content: space-between;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 /*General Heading Structure Styling*/
@@ -326,6 +313,7 @@ h4{
   margin-left: 25px;
   margin-right: 0px;
 }
+
 .details h1 p{
   display: inline-block;
   margin-left: 15px;
@@ -344,19 +332,19 @@ h4{
 
 .details a{
   color: #D64C02;
-  font-size: 18px;
   display: inline;
+  font-size: 18px;
 }
 
 .details a:hover{
-  text-decoration:underline;;
   border-bottom: none;
+  text-decoration:underline;;
 }
 
 .buttons-box{
   display: flex;
-  margin-top: 50px;
   margin-right: 30px;
+  margin-top: 50px;
 }
 
 .buttons-box button{
@@ -365,18 +353,19 @@ h4{
 }
 
 .btn-icons{
-  width: 30px;
   height: 30px;
+  width: 30px;
   padding: 0px;
   text-align: center;
   vertical-align: bottom;
 }
 
 #edit, #bookmark, #trash{
-  background-size: 18px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 18px;
 }
+
 #edit{
   background-image: url("images/edit.svg");
 }
@@ -402,43 +391,42 @@ h4{
 
 #location{
   width: 15px;
-  fill: #4e4350;
 }
 
 #open{
+  font-size: 12px;
+  height: 30px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 30px;
-  font-size: 12px;
 }
 
 /*--------Middle Nav-------*/
 .middle-nav{
-  display: flex;
-  width: 100%;
   background-color: #ededed;
+  display: flex;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .scroll-nav{
+  align-items: center;
+  display: block;
   font-size: 15px;
+  height: auto;
   margin-top: 15px;
   text-align: center;
-  display: block;
-  height: auto;
-  align-items: center;
   vertical-align: center;
 }
 
 .middle-nav ul{
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
 .middle-nav li{
+  display: inline-block;
   margin-right: 30px;
   text-decoration: none;
-  display: inline-block;
 }
 
 .middle-nav li:first-child{
@@ -454,12 +442,12 @@ h4{
 }
 
 #current{
-  padding-bottom: 15px;
-  font-weight: 700;
-  font-size: 13px;
-  color: #4e4350;
-  text-decoration:none;
   border-bottom: 2px solid #D64C02;
+  color: #4e4350;
+  font-weight: 700;
+  padding-bottom: 15px;
+  font-size: 13px;
+  text-decoration:none;
 }
 
 #current-mobile{
@@ -471,21 +459,21 @@ h4{
 }
 
 .inactive:hover{
-  text-decoration: none;
-  padding-bottom: 15px;
   border-bottom: 2px solid #D64C02;
+  padding-bottom: 15px;
+  text-decoration: none;
 }
 
 #left-arrow, #right-arrow{
-  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  padding: 0;
-  height: 22px;
-  width: 22px;
   border-style: none;
   border-width: none;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+  height: 22px;
+  padding: 0;
+  width: 22px;
   vertical-align: text-bottom;;
 }
 
@@ -510,36 +498,35 @@ h4{
 
 /*-----**-Graphs------*/
 .graphs{
+  background-color: #ddd;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1300px;
   height: auto;
   width: 100%;
-  background-color: #ddd;
 }
 
 
 /*Button Stylings per Section*/
 #totals, #applicants{
   display: block;
+  font-size: 14px;
+  height: 40px;
   margin-top: 25px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
   vertical-align: center;
-  font-size: 14px;
 }
 
 .collapse{
-  width: 30px;
-  height: 30px;
   background-image: url("images/up-arrow.svg");
-  background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 75%;
+  height: 30px;
+  width: 30px;
 }
 .collapse:hover{
   background-color: #D64C02;
@@ -550,36 +537,31 @@ h4{
   margin-top: 35px;
 }
 
-
-
 /*-----***-Circles------*/
 .circles{
+  background-color: #ddd;
   display: inline-block;
   height: auto;
-  width: 65%;
-  background-color: #ddd;
   margin-left: 40px;
+  width: 65%;
 }
 
 .circle-design{
-  display: inline-block;
-  margin: 0;
-	width: 150px;
-	height: 150px;
-	background: #ddd;
-	border-radius: 120px;
-  border-width: 8px;
+  background: #ddd;
+  border-radius: 120px;
   border-style: solid;
-  text-align: center;
-  align-content: center;
-  align-items: center;
+  border-width: 8px;
+  display: inline-block;
+  height: 150px;
+  margin: 0;
   padding: 0px;
+	width: 150px;
 }
 
 .circle-align{
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .circle-container{
@@ -589,19 +571,17 @@ h4{
 }
 
 .inner{
+  left: 4%;
   position: relative;
   transform: rotate(45deg);
   top: 4%;
-  left: 4%;
-  /*margin-left: auto;
-  margin-right: auto;*/
 }
 
 .inner h2{
   display: block;
-  margin-bottom: 2px;
   font-size: 35px;
   font-weight: 300;
+  margin-bottom: 2px;
 }
 
 .inner p{
@@ -615,77 +595,76 @@ h4{
 }
 
 #one {
+  border-bottom-color: #bbb;
   border-left-color: #a3021a;
   border-right-color: #a3021a;
-  border-bottom-color: #bbb;
   border-top-color: #a3021a;
 }
 
 #two {
+  border-bottom-color: #bbb;
   border-left-color: #026ba3;
   border-right-color: #bbb;
-  border-bottom-color: #bbb;
   border-top-color: #026ba3;
 }
 
 #three {
-  margin-right: 0px;
+  border-bottom-color: #bbb;
   border-left-color: #6ba302;
   border-right-color: #bbb;
-  border-bottom-color: #bbb;
   border-top-color: #bbb;
+  margin-right: 0px;
 }
 
 /*-----***-Bar Graphs------*/
 .bar-graph{
+  background-color: #ddd;
   display: flex;
   flex-direction: column;
   height: auto;
   width: 25%;
-  background-color: #ddd;
 }
 .bar-graph img{
-  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  width: 95%;
 }
 
 /*----Collapse Graphs ------*/
 .separate{
-  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-top: 50px;
   width: 85%;
 }
 
 /*-----**-bottom-Info------*/
 .bottom-info{
+  background-color: #ddd;
   display: flex;
   flex-direction: row;
   height: auto;
-  width: 100%;
-  max-width: 1300px;
-  background-color: #ddd;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 /*-----***-job-info------*/
 .job-info{
-  display: inline-block;
-  width: 60%;
-  height: auto;
   background-color: #ddd;
+  display: inline-block;
+  height: auto;
   margin-left: 2%;
   margin-right: 2%;
+  width: 60%;
 }
 
 /*-----Heading and Table ------*/
 .table-head{
-  text-align: left;
-  color: #ededed;
   background-color: #4e4350;
+  color: #ededed;
+  text-align: left;
 }
 .table-head h3{
   display: inline-block;
@@ -694,12 +673,12 @@ h4{
   margin-left: 30px;
 }
 .table-head button{
-  display: inline-block;
-  color: #ededed;
   background-color: #5f5450;
   border-radius: 0px;
-  font-size: 20px;
   border-style: none;
+  color: #ededed;
+  display: inline-block;
+  font-size: 20px;
   margin-left: 20px;
 }
 
@@ -708,20 +687,20 @@ h4{
 }
 
 .table-head button img{
-  width: 23px;
   margin-right: 5px;
+  width: 23px;
   vertical-align: text-bottom;
 }
 
 .content{
-  text-align: left;
   background-color: #ededed;
+  text-align: left;
 }
 
 .content h3{
   display: inline-block;
-  margin-left: 15px;
   font-size: 11px;
+  margin-left: 15px;
   text-align: left;
 }
 
@@ -735,19 +714,19 @@ h4{
 }
 
 .table{
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 table{
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
 }
 
 tr {
-  border: solid;
   border-color: #bbbbbb;
+  border: solid;
   border-width: 1px 0;
 }
 
@@ -759,17 +738,17 @@ tr:last-child {
 }
 
 .left-data, .right-data{
-  vertical-align: text-top;
-  text-align: left;
-  padding-top: 25px;
-  padding-bottom: 25px;
   font-size: 16px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: left;
+  vertical-align: text-top;
 }
 
 .left-data{
+  font-weight: 400;
   padding-left: 5px;
   padding-right: 5px;
-  font-weight: 400;
   width: 40%;
 }
 
@@ -781,11 +760,11 @@ tr:last-child {
 /*-----***Contact------*/
 
 .contact{
+  background-color: #ddd;
   display: flex;
   flex-direction: column;
-  width: 38%;
   height: auto;
-  background-color: #ddd;
+  width: 38%;
 }
 
 /*----Social Media ---*/
@@ -801,17 +780,17 @@ tr:last-child {
 .socialmedia{
   border-radius: 0px;
   border-style: none;
+  height: 55px;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 90%;
-  height: 55px;
 
 }
 .socialmedia img{
-  vertical-align: middle;
   margin-left: 11px;
   margin-right: 11px;
   width: 25px;
+  vertical-align: middle;
 }
 
 .footer hr{
@@ -820,8 +799,8 @@ tr:last-child {
 }
 
 #facebook{
-  margin-top: 0px;
   background-color: #3b5998;
+  margin-top: 0px;
 }
 
 #facebook:hover{
@@ -845,63 +824,61 @@ tr:last-child {
 }
 
 .hide{
-  font-size: 19px;
-  display: inline-block;;
-  vertical-align: center;
   color: #ededed;
+  display: inline-block;;
+  font-size: 19px;
   margin-left: 60px;
-  /*margin-right: 90px;*/
+  vertical-align: center;
 }
 
 /*-----Methods for Contact -----*/
 
 .forms{
   display: flex;
-  width: 90%;
   flex-direction: column;
+  width: 90%;
 }
 
 .inputs{
   display: block;
-  vertical-align: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  vertical-align: center;
 }
 
 .footer-input{
   background-color: #ededed;
-  font-size: 12px;
-  width: 75%;
-  height: 40px;
-  margin-top: auto;
-  margin-bottom: 10px;
   border-style: none;
+  font-size: 12px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: auto;
   padding-left: 10px;
-  /*vertical-align: bottom;*/
+  width: 75%;
 }
 
 .footer-submit{
-  color: #ededed;
-  border-radius: 0px;
+  background-color: #D64C02;
   border: none;
+  border-radius: 0px;
+  color: #ededed;
+  display: inline-block;
+  height: 40px;
   margin: 0px;
   width: 50px;
-  height: 40px;
-  display: inline-block;
-  background-color: #D64C02;
   vertical-align: middle;
 }
 
 .footer-submit:hover{
-  color: #ededed;
   background-color: #4e4350;
+  color: #ededed;
 }
 
 .links{
-  text-align: left;
   margin-left: 20px;
   margin-right: 20px;
+  text-align: left;
 }
 
 .links h3{
@@ -935,8 +912,8 @@ tr:last-child {
   }
 
   .circle-design{
+    height: 120px;
   	width: 120px;
-  	height: 120px;
   }
 
   .inner h2{
@@ -948,8 +925,8 @@ tr:last-child {
   }
 
   .bar-graph{
-    width: 30%;
     margin-right: 15px;
+    width: 30%;
   }
   .bar-graph img{
     width: 95%;
@@ -974,6 +951,7 @@ tr:last-child {
 
 @media screen and (max-width: 778px){
 
+  /*----Heading Styling-----*/
   .heading{
     flex-direction: column;
   }
@@ -998,21 +976,23 @@ tr:last-child {
   }
 
   .heading button{
-    width: 35px;
     height: 35px;
     margin-left: 15px;
     margin-right: 15px;
+    width: 35px;
   }
 
   .btn-icons{
-    width: 40px;
     height: 40px;
+    width: 40px;
   }
 
   #open{
-    width: 70px;
     height: 35px;
+    width: 70px;
   }
+
+  /*----Middle Nav Styling-----*/
 
   .middle-nav{
     justify-content: center;
@@ -1037,22 +1017,22 @@ tr:last-child {
   }
 
   #current-mobile{
+    border-bottom: 2px solid #D64C02;
     font-size: 18px;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 2px solid #D64C02;
   }
 
   #left-arrow, #right-arrow{
-    display: inline-block;
-    background-size: cover;
-    padding: 0;
-    height: 30px;
-    width: 30px;
-    border-style: none;
-    border-width: none;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+    border-width: none;
+    display: inline-block;
+    height: 30px;
+    padding: 0;
+    width: 30px;
     vertical-align: text-bottom;;
   }
 
@@ -1082,24 +1062,30 @@ tr:last-child {
   .removed{
     display: none;
   }
+
+    /*----Graphs and Lower -----*/
+
   .separate{
+    align-content: center;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    align-content: center;
+    margin-top: 10px;
+    width: 100%;
   }
+
   .separate hr{
-    margin-left: auto;
     display: inline-block;
-    width: 30%;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: 30%;
   }
 
   hr {
     display: block;
-    width: 90%;
     margin-top: 30px;
+    width: 90%;
   }
 
   .graphs {
@@ -1109,14 +1095,14 @@ tr:last-child {
 
   .circles {
     display: inline-block;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 
   .circle-design{
+    height: 140px;
   	width: 140px;
-  	height: 140px;
   }
 
   .inner h2{
@@ -1128,37 +1114,37 @@ tr:last-child {
   }
 
   .bar-graph{
-    width: 100%;
-    margin-top: 10px;
     margin-left: auto;
+    margin-top: 10px;
     margin-right: auto;
+    width: 100%;
   }
 
   .bar-graph img{
     width: 90%;
   }
 
-  .separate{
-    width: 100%;
-    margin-top: 10px;
-  }
+
+
+  /*----Lower Job / Footer-----*/
+
   .bottom-info{
     flex-direction: column;
     width: 100%;
   }
 
   .job-info {
-    width: 95%;
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
   }
 
   .contact {
     display: block;
-    width: 90%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 
   .social{
@@ -1177,12 +1163,13 @@ tr:last-child {
 
   .forms{
     display: block;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 }
 @media screen and (max-width: 550px){
+  /*--------Top Nav---------*/
   .topnav{
     height: 55px;
   }
@@ -1191,12 +1178,12 @@ tr:last-child {
   }
 
   #find{
-    display: block;
     background-image: url("images/searchnav.svg");
+    display: block;
   }
   #find:hover{
-    background-image: url("images/searchnav-hover.svg");
     background-color: #D64C02;
+    background-image: url("images/searchnav-hover.svg");
   }
 
   .topinput{
@@ -1206,6 +1193,7 @@ tr:last-child {
     background-size: 25px;
   }
 
+  /*--------Lower Job / Footer---------*/
   .details h1{
     font-size: 20px;
   }
@@ -1230,15 +1218,13 @@ tr:last-child {
   .table-head button img{
     width: 15px;
   }
-
   .left-data, .right-data{
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     vertical-align: text-top;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 12px;
   }
-
 
   .hide{
     display: none;
@@ -1248,12 +1234,12 @@ tr:last-child {
   }
 
   .socialmedia{
-    width: 60px;
-    height: 60px;
     display: inline-block;
-    margin-top: 0px;
+    height: 60px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 0px;
+    width: 60px;
   }
   .socialmedia img{
     width: 30px;
